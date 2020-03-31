@@ -13,11 +13,11 @@ export class Login extends Component {
         return (
             <div>
            
-                <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Login</a>
+                <a className="waves-effect waves-light btn modal-trigger red darken-3" href="#modal1">Login</a>
                 <div id="modal1" class="modal">
                     <div className="modal-content">
                         <h4>Modal Header</h4>
-                        <p>A bunch of text</p>
+                        <p className="fs-18 font-black">A bunch of text</p>
                     </div>
                     <div className="modal-footer">
                          <a href="#!" class="modal-close waves-effect waves-green btn-flat">Login</a>
