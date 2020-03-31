@@ -1,4 +1,5 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import { Parallax } from 'react-materialize';
 
 export class Login extends Component {
     componentDidMount(){

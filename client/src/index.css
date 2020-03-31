@@ -11,4 +11,11 @@ body {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
       monospace;
   }
+  .fs-18 {
+    font-size: 18px;
+  }
+
+  .mt25 {
+    margin-top: 25px;
+  }
   

@@ -1,20 +1,36 @@
 import React from 'react';
-import Parallax from "./components/Parallax";
+import Home from './pages/Home'
+
 import Navbar from './components/Navbar';
-import Grid from './components/Grid';
+
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  NavLink
+} from "react-router-dom";
+
 
 
 function App() {
   return (
+
+    <Router>
     <div className="App">
+    
       <Navbar/>
-      <Parallax/>
-      <Grid/>
+
+      <Switch>
+        <Route exact path={["/", "/home"]}></Route>
+        <Home/>
+      </Switch>
+      
       
       
       
       
     </div>
+    </Router>
   );
 }
 
