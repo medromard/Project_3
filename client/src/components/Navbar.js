@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import login, { Login } from './loginModal'
+import register, { Register } from './registerModal'
 
 export class Navbar extends Component {
     componentDidMount(){}
@@ -14,7 +15,7 @@ export class Navbar extends Component {
                     <ul className="right hide-on-med-and-down">
                         <li><Login/></li>
                        
-                        <li><a className="waves-effect waves-light modal-trigger btn">Register</a></li>
+                        <li><Register/></li>
 
                        
                     </ul>
