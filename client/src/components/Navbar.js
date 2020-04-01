@@ -13,7 +13,8 @@ export class Navbar extends Component {
                     <div className="container">
                     <a href="#!" className="brand-logo">HotDropz</a>
                     <ul className="right hide-on-med-and-down">
-                        <li><Login/></li>
+                        <li className="mr25"><Login/></li>
+                        <span> </span>
                        
                         <li><Register/></li>
 
