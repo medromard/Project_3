@@ -18,6 +18,12 @@ body {
   .mt25 {
     margin-top: 25px;
   }
+
+  /* Nav Styling */
+.mr25 {
+  margin-right: 15px;
+}
+
 /* Login Modal Styling */
   .black-font {
     color: black;
