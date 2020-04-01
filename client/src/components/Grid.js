@@ -1,8 +1,13 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, Component } from 'react';
 import M from 'materialize-css';
-
+import { Row, Col } from 'react-materialize';
 import Item from './Card'
-const Grid = () => {
+
+
+class Grid extends Component {
+    state = {array:[0,1,0,1,0,1]
+    }
+    render(){
     return (
         <div className = "container">
             <div className = "row">
@@ -11,11 +16,18 @@ const Grid = () => {
                 </div>
             </div>
 
-            <div className = "row">
-                <Item/>
-            </div>
+            <h2 className = 'center'>Hottest Drops</h2>
+
+            <Row>
+
+                {this.state.array.map(item => (                <Col
+                s={12}
+                m={6}><Item/></Col>))}
+            </Row>
+        
+            
         </div>
     );
 };
-
+}
 export default Grid; 
