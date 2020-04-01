@@ -18,4 +18,12 @@ body {
   .mt25 {
     margin-top: 25px;
   }
+/* Login Modal Styling */
+  .black-font {
+    color: black;
+}
+
+#Modal-0 {
+  width:500px;
+}
   

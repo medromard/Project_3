@@ -13,7 +13,7 @@ export class Register extends Component {
         return (
             <div>
            
-                <a className="waves-effect waves-light btn modal-trigger red darken-3" href="#modal1">Register</a>
+                <a className="waves-effect waves-light btn modal-trigger" href="#modal1">Register</a>
                 <div id="modal1" class="modal">
                     <div className="modal-content">
                         <h4>Modal Header</h4>
