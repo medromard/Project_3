@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { Parallax } from 'react-materialize';
+import { Modal, Button} from 'react-materialize';
+
 
 export class Login extends Component {
     componentDidMount(){
@@ -9,21 +10,57 @@ export class Login extends Component {
             var instances = M.Modal.init(elems, {});
           });
     }
+    submitLogin(){
+        console.log("Success!!!") 
+        
+    }
 
     render() {
         return (
             <div>
            
-                <a className="waves-effect waves-light btn modal-trigger red darken-3" href="#modal1">Login</a>
-                <div id="modal1" class="modal">
-                    <div className="modal-content">
-                        <h4>Modal Header</h4>
-                        <p className="fs-18 font-black">A bunch of text</p>
-                    </div>
-                    <div className="modal-footer">
-                         <a href="#!" class="modal-close waves-effect waves-green btn-flat">Login</a>
-                    </div>
-                 </div>
+           <Modal
+  actions={[
+    <Button flat modal="close" node="button" waves="green" onClick={() => {this.submitLogin();}}>Login</Button>,
+    <Button flat modal="close" node="button" waves="green" >Close</Button>
+    
+  ]}
+  bottomSheet={false}
+  fixedFooter={false}
+  header="Login"
+  id="Modal-0"
+  open={false}
+  options={{
+    dismissible: true,
+    endingTop: '10%',
+    inDuration: 250,
+    onCloseEnd: null,
+    onCloseStart: null,
+    onOpenEnd: null,
+    onOpenStart: null,
+    opacity: 0.5,
+    outDuration: 250,
+    preventScrolling: true,
+    startingTop: '4%'
+  }}
+  trigger={<Button node="button">Login</Button>}
+>
+<div class="row">
+    <form class="col s12">
+      <div class="row">
+        <div class="input-field col s12">
+          <textarea id="textarea1" class="materialize-textarea"></textarea>
+          <label for="textarea1">Username</label>
+        </div>
+        <div class="input-field col s12">
+          <textarea id="textarea1" class="materialize-textarea"></textarea>
+          <label for="textarea1">Password</label>
+        </div>
+      </div>
+    </form>
+  </div>
+  
+</Modal>
 
             </div>
         )

@@ -1,6 +1,7 @@
 import React, {useState, UseEffect, useEffect} from 'react';
 import M from 'materialize-css';
 import { Parallax } from 'react-materialize';
+import img from "./assets/Section_background_1.jpg";
 
 const ParallaxComp = () => {
     {// useEffect(()=> {
@@ -12,7 +13,7 @@ const ParallaxComp = () => {
         <div>
             <div className="parallax-container">
                 <Parallax
-                    image={<img alt="" src="client/src/components/Section_background_1.jpg"/>}
+                    image={<img alt="" src={img}/>}
                     options={{
                     responsiveThreshold: 0
                     }}
