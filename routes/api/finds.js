@@ -5,7 +5,7 @@ const findsController = require("../../controllers/findsController");
 router.route("/")
   .get(findsController.findAllHypeBeast)
 
-router.route("/hypebeast/:id")
+router.route("/hypebeast")
   .get(findsController.findAllHypeBeast)
   
 // Matches with "/api/books"

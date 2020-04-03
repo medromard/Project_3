@@ -1,6 +1,7 @@
 import React from 'react';
 import Home from './pages/Home'
 import User from './pages/User'
+import Data from './pages/data'
 import userData from './download.json'
 
 import Navbar from './components/Navbar';
@@ -24,6 +25,7 @@ function App() {
       <Switch>
         <Route exact path={["/", "/home"]}><Home/></Route>
         <Route exact path={[ "/user"]}><User/></Route>
+        <Route exact path={[ "/data"]}><Data/></Route>
         
       </Switch>
 
