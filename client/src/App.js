@@ -2,6 +2,7 @@ import React from 'react';
 import Home from './pages/Home'
 import User from './pages/User'
 import userData from './download.json'
+import ShoeBoard from './components/ShoeBoard'
 
 import Navbar from './components/Navbar';
 
@@ -28,7 +29,7 @@ function App() {
       </Switch>
 
      
-      
+      <ShoeBoard/>
       
       
       
