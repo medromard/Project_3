@@ -20,8 +20,7 @@ class Grid extends Component {
 
             <Row>
 
-                {this.state.array.map(item => (                
-                <Col
+                {this.state.array.map(item => (                <Col
                 s={12}
                 m={6}><Item/></Col>))}
             </Row>

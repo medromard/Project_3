@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import login, { Login } from './loginModal'
 import register, { Register } from './registerModal'
-import { Link } from "react-router-dom";
 
 export class Navbar extends Component {
     componentDidMount(){}
@@ -12,7 +11,7 @@ export class Navbar extends Component {
             <nav>
                 <div className="nav-wrapper black">
                     <div className="container">
-                    <Link to="/Home" className="brand-logo">HotDropz</Link>
+                    <a href="#!" className="brand-logo">HotDropz</a>
                     <ul className="right hide-on-med-and-down">
                         <li className="mr25"><Login/></li>
                         <span> </span>
