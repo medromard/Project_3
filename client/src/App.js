@@ -1,5 +1,7 @@
 import React from 'react';
 import Home from './pages/Home'
+import User from './pages/User'
+import userData from './download.json'
 
 import Navbar from './components/Navbar';
 
@@ -7,7 +9,6 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  NavLink
 } from "react-router-dom";
 
 
@@ -22,8 +23,11 @@ function App() {
 
       <Switch>
         <Route exact path={["/", "/home"]}><Home/></Route>
+        <Route exact path={[ "/user"]}><User/></Route>
         
       </Switch>
+
+     
       
       
       
