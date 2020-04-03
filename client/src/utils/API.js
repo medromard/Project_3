@@ -3,7 +3,7 @@ import axios from "axios";
 
 export default {
     getShoes: function () {
-        return axios.get("http://localhost:3001/api/finds/hypebeast")
+        return axios.get("/api/finds/hypebeast")
     },
     getFunko: function() {
         return axios.get("")

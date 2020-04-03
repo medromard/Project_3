@@ -10,7 +10,7 @@ const Item = (props) => {
  
     <Card
       actions={[
-        <a target= "_blank" key="1" href={props.link}>This is a link</a>
+        <a target= "_blank" key="1" href={props.link}>Link to Article</a>
       ]}
       closeIcon={<Icon>close</Icon>}
       header={<CardTitle image="https://materializecss.com/images/sample-1.jpg" />}
