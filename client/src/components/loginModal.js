@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Modal, Button} from 'react-materialize';
-import { Link } from "react-router-dom";
 
 
 export class Login extends Component {
@@ -22,7 +21,7 @@ export class Login extends Component {
            
            <Modal
   actions={[
-    <Button flat modal="close" node="button" waves="green" onClick={() => {this.submitLogin();}}><Link to = "/user">Login</Link></Button>,
+    <Button flat modal="close" node="button" waves="green" onClick={() => {this.submitLogin();}}>Login</Button>,
     <Button flat modal="close" node="button" waves="green" >Close</Button>
     
   ]}
