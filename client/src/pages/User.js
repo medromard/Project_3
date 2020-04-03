@@ -3,8 +3,6 @@ import { Row, Col, Card, CardTitle, Icon } from 'react-materialize';
 import Item from '../components/Card'
 
 
-
-
 function User() {
     const [state, setState] = useState({
         array: [0, 1, 0, 1, 0, 1]
