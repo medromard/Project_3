@@ -3,22 +3,22 @@ import M from 'materialize-css';
 import { Card, Icon, CardTitle, Col } from 'react-materialize';
 
 
-
-const Item = () => {
+const Item = (props) => {
     
     return(
     
  
     <Card
       actions={[
-        <a key="1" href="#">This is a link</a>
+        <a target= "_blank" key="1" href={props.link}>This is a link</a>
       ]}
       closeIcon={<Icon>close</Icon>}
       header={<CardTitle image="https://materializecss.com/images/sample-1.jpg" />}
       horizontal
       revealIcon={<Icon>more_vert</Icon>}
     >
-        <h4>Item name</h4>
+        <h4>{props.title}</h4>
+        <h5>{props.author}</h5>
     
     </Card>
  
