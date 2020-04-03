@@ -1,12 +1,10 @@
 import React, { useState, useEffect, Component } from 'react';
 import M from 'materialize-css';
-import { Row, Col } from 'react-materialize';
-import Item from './Card'
+
 
 
 class Grid extends Component {
-    state = {array:[0,1,0,1,0,1]
-    }
+
     render(){
     return (
         <div className = "container">
@@ -18,13 +16,7 @@ class Grid extends Component {
 
             <h2 className = 'center'>Hottest Drops</h2>
 
-            <Row>
-
-                {this.state.array.map(item => (                
-                <Col
-                s={12}
-                m={6}><Item/></Col>))}
-            </Row>
+           
         
             
         </div>

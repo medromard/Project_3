@@ -1,8 +1,6 @@
 import React, {useState, UseEffect, useEffect} from 'react';
 import M from 'materialize-css';
 import { Card, Icon, CardTitle, Col } from 'react-materialize';
-import img from "./assets/team-1.jpg";
-import { PromiseProvider } from 'mongoose';
 
 
 const Item = (props) => {
