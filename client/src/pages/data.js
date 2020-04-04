@@ -12,32 +12,29 @@ function User() {
 
     useEffect(() => {
         // code to run on component mount
-        API.getShoes().then(results =>
-            {
-                setState({
-                    array: results.data.items
-                })
+        API.getShoes().then(results => {
+            setState({
+                array: results.data.items
             })
-      }, [])
+        })
+    }, [])
 
     return (
         <div className="container">
             {}
             <Row>
-
                 {state.array.map(item => (
                     <Col
                         s={12}
                         m={6}>
-                         {/* {JSON.stringify(item)} */}
-                            <Item 
-                                title={item.title}
-                                author={item.author}
-                                link={item.link}
-                            />
+                        {/* {JSON.stringify(item)} */}
+                        <Item
+                            title={item.title}
+                            pubDate={item.pubDate}
+                            link={item.link}
+                        />
                     </Col>))}
             </Row>
-
         </div>
     )
 };
