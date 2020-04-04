@@ -31,7 +31,7 @@ function ShoeBoard() {
                          {/* {JSON.stringify(item)} */}
                             <Item 
                                 title={item.title}
-                                author={item.author}
+                                pubDate={item.pubDate}
                                 link={item.link}
                             />
                     </Col>))}
