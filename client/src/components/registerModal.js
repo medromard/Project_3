@@ -43,7 +43,7 @@ export class Register extends Component {
     preventScrolling: true,
     startingTop: '4%'
   }}
-  trigger={<Button node="button">Register</Button>}
+  trigger={<Button node="button" className = "ice">Register</Button>}
 >
 <div class="row">
     <form class="col s12">

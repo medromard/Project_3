@@ -44,17 +44,17 @@ export class Login extends Component {
     preventScrolling: true,
     startingTop: '4%'
   }}
-  trigger={<Button node="button">Login</Button>}
+  trigger={<Button node="button" className = "ice">Login</Button>}
 >
-<div class="row">
-    <form class="col s12">
-      <div class="row">
-        <div class="input-field col s12">
-          <textarea id="textarea1" class="materialize-textarea"></textarea>
+<div className="row">
+    <form className="col s12">
+      <div className="row">
+        <div className="input-field col s12">
+          <textarea id="textarea1" className="materialize-textarea"></textarea>
           <label for="textarea1">Username</label>
         </div>
-        <div class="input-field col s12">
-          <textarea id="textarea1" class="materialize-textarea"></textarea>
+        <div className="input-field col s12">
+          <textarea id="textarea1" className="materialize-textarea"></textarea>
           <label for="textarea1">Password</label>
         </div>
       </div>

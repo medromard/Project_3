@@ -29,7 +29,51 @@ body {
     color: black;
 }
 
+/* Colors */
+
+.ice {
+  background-color: #00edfc;
+}
+
+/* Heading Styles */
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: orbitron, sans-serif;
+
+}
+
+h4 {
+  font-size: 1.10rem;
+  font-weight: 700;
+
+font-style: normal;
+}
+
+h5 {
+  font-size: .85rem;
+}
+
+h6 {
+  font-size: 2.25rem;
+}
+
 #Modal-0 {
   width:500px;
 }
+
+.brand-name  {
+  font-size: 1.5rem !important;
+}
+
+/* Spaceing */
+
+.mb25 {
+  margin-bottom: 25px;
+}
+
+.mb50 {
+  margin-bottom: 50px;
+}
+
+
   
