@@ -13,8 +13,11 @@ app.use(cors());
 if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));
 }
+require("./routes/api/signin")(app)
+require("./routes/api/signup")(app)
 // Add routes, both API and view
 app.use(routes);
+
 
 // Connect to the Mongo DB
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/reactreadinglist");
