@@ -5,6 +5,7 @@ body {
       sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    background-image: url(./components/assets/triangle-mosaic.png);
   }
   
   code {
@@ -43,7 +44,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h4 {
-  font-size: 1.10rem;
+  font-size: 1.05rem;
   font-weight: 700;
 
 font-style: normal;
