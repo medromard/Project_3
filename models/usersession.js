@@ -1,9 +1,10 @@
 const mongoose = require('mongoose');
 
+
 const UserSessionSchema = new mongoose.Schema({
     userId: {
-        type: Number,
-        default: -1
+        type: mongoose.Types.ObjectId
+       // default: -1
 
     },
     timestamp: {
