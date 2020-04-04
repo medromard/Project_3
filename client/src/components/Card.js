@@ -1,10 +1,11 @@
 import React, {useState, UseEffect, useEffect} from 'react';
 import M from 'materialize-css';
-import { Card, Icon, CardTitle, Col } from 'react-materialize';
+import { Card, Icon, CardTitle, } from 'react-materialize';
 
 
 const Item = (props) => {
     
+
     return(
     
  
