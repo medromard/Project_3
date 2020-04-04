@@ -6,7 +6,7 @@ import API from '../utils/API';
 
 function ShoeBoard() {
     const [state, setState] = useState({
-        array: [0, 1]
+        array: []
     })
 
     useEffect(() => {
@@ -23,7 +23,6 @@ function ShoeBoard() {
         <div className="container">
             {}
             <Row>
-
                 {state.array.map(item => (
                     <Col
                         s={12}
@@ -33,6 +32,7 @@ function ShoeBoard() {
                                 title={item.title}
                                 pubDate={item.pubDate}
                                 link={item.link}
+                                image={item.image}
                             />
                     </Col>))}
             </Row>
