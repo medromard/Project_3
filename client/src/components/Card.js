@@ -11,7 +11,7 @@ const Item = (props) => {
       ]}
       closeIcon={<Icon>close</Icon>}
       header={<CardTitle image={props.image} />}
-      horizontal
+      verticle
       revealIcon={<Icon>more_vert</Icon>}
     >
         <h4>{props.title}</h4>
