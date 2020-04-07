@@ -26,7 +26,7 @@ function ShoeBoard() {
                 {state.array.map(item => (
                     <Col 
                         s={12}
-                        m={6}>
+                        m={4}>
                          {/* {JSON.stringify(item)} */}
                             <Item 
                                 title={item.title}
