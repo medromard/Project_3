@@ -2,7 +2,6 @@ import React from 'react';
 import Home from './pages/Home'
 import User from './pages/User'
 import Data from './pages/data'
-import userData from './download.json'
 import ShoeBoard from './components/ShoeBoard'
 
 import Navbar from './components/Navbar';

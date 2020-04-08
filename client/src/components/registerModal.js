@@ -1,14 +1,13 @@
 import React, { Component } from 'react';
-import { Modal, Button} from 'react-materialize';
-
+import { Modal, Button, } from 'react-materialize';
 
 export class Register extends Component {
     componentDidMount(){
-        const M = window.M;
-        document.addEventListener('DOMContentLoaded', function() {
-            var elems = document.querySelectorAll('.modal');
-            var instances = M.Modal.init(elems, {});
-          });
+        // const M = window.M;
+        // document.addEventListener('DOMContentLoaded', function() {
+        //     var elems = document.querySelectorAll('.modal');
+            
+        //   });
     }
     submitLogin(){
         console.log("Success!!!") 
