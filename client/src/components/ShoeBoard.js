@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Row, Col, Card, CardTitle, Icon } from 'react-materialize';
+import { Row, Col } from 'react-materialize';
 import Item from '../components/Card';
 import API from '../utils/API';
 

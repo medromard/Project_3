@@ -3,9 +3,7 @@ import { Row, Col, Card, CardTitle, Icon, Button } from "react-materialize";
 import { Link } from "react-router-dom";
 
 function User() {
-  const [state, setState] = useState({
-    array: [0, 1, 0, 1, 0, 1]
-  });
+ 
   return (
     <div className="container">
       <Row>

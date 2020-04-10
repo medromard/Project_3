@@ -1,14 +1,9 @@
-import React, {useState, UseEffect, useEffect} from 'react';
-import M from 'materialize-css';
+import React from 'react';
 import { Parallax } from 'react-materialize';
 import img from "./assets/Section_background_1.jpg";
 
 const ParallaxComp = () => {
-    {// useEffect(()=> {
-        // let elements = document.querySelectorAll(".parallax");
-        // M.Parallax.init(elements);
-        // }, []);
-    }
+    
     return(
         <div>
             <div className="parallax-container">
