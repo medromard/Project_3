@@ -3,6 +3,7 @@ import { Parallax } from 'react-materialize';
 import img from "./assets/Section_background_1.jpg";
 
 const ParallaxComp = () => {
+    
     return(
         <div>
             <div className="parallax-container">
