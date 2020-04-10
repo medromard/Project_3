@@ -1,19 +1,49 @@
 import React, { Component } from 'react';
-import { Modal, Button} from 'react-materialize';
+import { Modal, Button, TextInput} from 'react-materialize';
+import API from '../utils/API';
+
 
 
 export class Register extends Component {
-    componentDidMount(){
-        const M = window.M;
-        document.addEventListener('DOMContentLoaded', function() {
-            var elems = document.querySelectorAll('.modal');
-            var instances = M.Modal.init(elems, {});
-          });
-    }
-    submitLogin(){
+  constructor (props) {
+    super(props);
+    this.state = {
+      email: '',
+      password: '',
+      username: ''}
+      
+  };
+    // componentDidMount(){
+    //     const M = window.M;
+    //     document.addEventListener('DOMContentLoaded', function() {
+    //         var elems = document.querySelectorAll('.modal');
+    //         // var instances = M.Modal.init(elems, {});
+    //       });
+    // }
+    submitRegister(event){
+      event.preventDefault();
+      API.signUp(this.state.password, this.state.email, this.state.username)
+      .then((res) => {
+        console.log(res.data)
+      })
         console.log("Success!!!") 
+
+        
         
     }
+
+    handleInput (event) {
+      // event.preventDefault()
+      // const key = event.target.name;
+      // const value = event.target.value;
+      // // this.setState( (state, event) => ({[event.target.name]: event.target.value }))
+      // this.setState(  {email: event.target.value })
+      // console.log(this.state + event.target.name + event.target.value)
+     
+    }
+    
+
+    
 
     render() {
         return (
@@ -21,15 +51,15 @@ export class Register extends Component {
            
            <Modal
   actions={[
-    <Button flat modal="close" node="button" waves="green" onClick={() => {this.submitLogin();}}>Submit</Button>,
+    <Button flat modal="close" node="button" waves="green" onClick={() => {this.submitRegister()}}>Submit</Button>,
     <Button flat modal="close" node="button" waves="green" >Close</Button>
     
   ]}
   bottomSheet={false}
   fixedFooter={false}
+  
   header="Sign up Today"
   id="Modal-0"
-  open={false}
   options={{
     dismissible: true,
     endingTop: '10%',
@@ -45,21 +75,18 @@ export class Register extends Component {
   }}
   trigger={<Button node="button" className = "ice">Register</Button>}
 >
-<div class="row">
-    <form class="col s12">
-      <div class="row">
-        <div class="input-field col s12">
-          <textarea id="textarea1" class="materialize-textarea"></textarea>
-          <label for="textarea1">Email</label>
-        </div>
-        <div class="input-field col s12">
-          <textarea id="textarea1" class="materialize-textarea"></textarea>
-          <label for="textarea1">Username</label>
-        </div>
-        <div class="input-field col s12">
-          <textarea id="textarea1" class="materialize-textarea"></textarea>
-          <label for="textarea1">Password</label>
-        </div>
+<div className="row">
+    <form className="col s12">
+      <div className="row">
+        
+          <TextInput s={12} label="Email" id="textarea1"  name="email" onChange={(e) => {this.handleInput(e)}}></TextInput>
+       
+        
+          <TextInput s={12} label="Username"  id="textarea2"  name="username" onChange={(e) => {this.handleInput(e)}}></TextInput>
+        
+      
+       
+          <TextInput s={12} label="Password" id="textarea3"  name="password" type="password" onChange={(e) => {this.handleInput(e)}}></TextInput>
       </div>
     </form>
   </div>

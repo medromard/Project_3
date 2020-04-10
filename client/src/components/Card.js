@@ -10,8 +10,8 @@ const Item = (props) => {
         <a target= "_blank" key="1" href={props.link}>Link to Article</a>
       ]}
       closeIcon={<Icon>close</Icon>}
-      header={<CardTitle image={props.image} />}
-      horizontal
+      header={<CardTitle className="card-image shoes" image={props.image} />}
+      
       revealIcon={<Icon>more_vert</Icon>}
     >
         <h4>{props.title}</h4>
