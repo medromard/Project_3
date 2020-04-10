@@ -6,6 +6,7 @@ import { Card, Icon, CardTitle, } from 'react-materialize';
 const Item = (props) => { 
     return(
     <Card
+    className="shoe-card"
       actions={[
         <a target= "_blank" key="1" href={props.link}>Link to Article</a>
       ]}
