@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, useState } from 'react';
 import { Modal, Button} from 'react-materialize';
 import { Link } from "react-router-dom";
 
@@ -8,6 +8,7 @@ export class Login extends Component {
         const M = window.M;
         document.addEventListener('DOMContentLoaded', function() {
             var elems = document.querySelectorAll('.modal');
+            // var instances = M.Modal.init(elems, {});
           });
     }
     submitLogin(){
@@ -50,11 +51,11 @@ export class Login extends Component {
       <div className="row">
         <div className="input-field col s12">
           <textarea id="textarea1" className="materialize-textarea"></textarea>
-          <label for="textarea1">Username</label>
+          <label htmlFor="textarea1">Username</label>
         </div>
         <div className="input-field col s12">
           <textarea id="textarea1" className="materialize-textarea"></textarea>
-          <label for="textarea1">Password</label>
+          <label htmlFor="textarea1">Password</label>
         </div>
       </div>
     </form>

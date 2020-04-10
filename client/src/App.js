@@ -3,6 +3,7 @@ import Home from './pages/Home'
 import User from './pages/User'
 import Data from './pages/data'
 import ShoeBoard from './components/ShoeBoard'
+import Footer from './components/Footer'
 
 import Navbar from './components/Navbar';
 
@@ -31,6 +32,10 @@ function App() {
 
      
       <ShoeBoard/>
+      <Footer/>
+     
+
+      
       
       
       

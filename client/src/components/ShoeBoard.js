@@ -25,8 +25,11 @@ function ShoeBoard() {
             <Row>
                 {state.array.map(item => (
                     <Col
+                    
+                        key = {item.link} 
+                    
                         s={12}
-                        m={6}>
+                        m={4}>
                          {/* {JSON.stringify(item)} */}
                             <Item 
                                 title={item.title}
