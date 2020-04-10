@@ -33,10 +33,15 @@ export class Register extends Component {
     }
 
     handleInput (event) {
-      // event.preventDefault()
-      // const key = event.target.name;
-      // const value = event.target.value;
-      // // this.setState( (state, event) => ({[event.target.name]: event.target.value }))
+      console.log(event)
+      event.preventDefault();
+      const key = event.target.name;
+      
+      const value = event.target.value;
+      console.log(value);
+      this.state[key]=value;
+      console.log(this.state)
+      //this.setState( (state, event) => ({[event.target.name]: event.target.value }))
       // this.setState(  {email: event.target.value })
       // console.log(this.state + event.target.name + event.target.value)
      
@@ -51,7 +56,7 @@ export class Register extends Component {
            
            <Modal
   actions={[
-    <Button flat modal="close" node="button" waves="green" onClick={() => {this.submitRegister()}}>Submit</Button>,
+    <Button flat modal="close" node="button" waves="green" onClick={(e) => {this.submitRegister(e)}}>Submit</Button>,
     <Button flat modal="close" node="button" waves="green" >Close</Button>
     
   ]}
