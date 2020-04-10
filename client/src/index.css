@@ -113,9 +113,13 @@ h6 {
   max-height: 350px;
 }
 
+.shoe-card {
+  max-height:451px;
+}
+
 .shoes {
   display: inline;
-  max-height: 208px;
+  max-height: 208px!important;
 }
 
 [type="radio"]:checked+span:after, [type="radio"].with-gap:checked+span:after {
