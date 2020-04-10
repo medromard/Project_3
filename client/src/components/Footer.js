@@ -1,9 +1,6 @@
 import React  from 'react';
 
-
-
 function Footer() {
-
     return (
         <footer class="page-footer black">
           <div class="container">

@@ -82,4 +82,4 @@ See the layout of the Login page of app below.
 
 
 ## Known Issues With Code
-* One issue with this app is that since our search query does not have a lot of specific parameters in it the same recipe can come back in different searches.  This will result in that recipe getting saved into the database with different ids and different searches.  This is could cause misinformation if code is ever written to search for recipes by label.
+* One issue that we have with the code is a style problem with the cards that the articles show up on. 
