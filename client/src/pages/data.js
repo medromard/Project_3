@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Row, Col } from 'react-materialize';
 import Item from '../components/Card';
-
 import API from '../utils/API';
 
 

@@ -7,7 +7,7 @@ const Item = (props) => {
     <Card
     className="shoe-card"
       actions={[
-        <a target= "_blank" key="1" href={props.link}>Link to Article</a>
+        <a target= "_blank" rel="noopener noreferrer" key="1" href={props.link}>Link to Article</a>
       ]}
       closeIcon={<Icon>close</Icon>}
       header={<CardTitle className="card-image shoes" image={props.image} />}
