@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Col, Card, CardTitle, Icon, Button } from "react-materialize";
+import { Row, Col, Card, CardTitle, Icon, Button } from "react-materialize";
 import { Link } from "react-router-dom";
 
 function User() {

@@ -1,3 +1,4 @@
+
 ## Project_3 Hot Dropz
 Create an app that allows users to get the latest news for the hottest exclusive limited edition items that will be dropping into the market place. Users will be able to save their interests for later reference on when the item will be available to buy. 
 
