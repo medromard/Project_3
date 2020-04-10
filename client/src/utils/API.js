@@ -7,7 +7,17 @@ export default {
     },
     getFunko: function() {
         return axios.get("")
+    },
+    signIn: function(password, email){
+        return axios.post("/api/account/signin", {password:password, email:email})
+    },
+    signUp: function(password, email, username){
+        return axios.post("/api/account/signup", {password:password, email:email, username:username})
+    },
+    logOut: function() {
+        return axios.get("/api/account/logout")
     }
+    
 }
 // export default {
 //   // Gets all books

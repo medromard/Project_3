@@ -113,6 +113,11 @@ h6 {
   max-height: 350px;
 }
 
+.shoes {
+  display: inline;
+  max-height: 208px;
+}
+
 [type="radio"]:checked+span:after, [type="radio"].with-gap:checked+span:after {
   background-color: #00edfc !important;
 }

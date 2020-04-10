@@ -24,7 +24,10 @@ function ShoeBoard() {
             {}
             <Row>
                 {state.array.map(item => (
-                    <Col 
+                    <Col
+                    
+                        key = {item.link} 
+                    
                         s={12}
                         m={4}>
                          {/* {JSON.stringify(item)} */}
