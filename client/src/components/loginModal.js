@@ -1,24 +1,34 @@
 import React, { Component, useState } from 'react';
-import { Modal, Button} from 'react-materialize';
+import { Modal, Button, TextInput} from 'react-materialize';
 import { Link } from "react-router-dom";
 import API from '../utils/API';
 
 
 export class Login extends Component {
-    componentDidMount(){
-        const M = window.M;
-        document.addEventListener('DOMContentLoaded', function() {
-            var elems = document.querySelectorAll('.modal');
-            // var instances = M.Modal.init(elems, {});
-          });
-    }
+
+  constructor (props) {
+    super(props);
+    this.state = {
+      email: '',
+      password: ''
+     }
+      
+  };
+  
+    // componentDidMount(){
+    //     const M = window.M;
+    //     document.addEventListener('DOMContentLoaded', function() {
+    //         var elems = document.querySelectorAll('.modal');
+    //         // var instances = M.Modal.init(elems, {});
+    //       });
+    // }
     submitLogin(event){
-      event.preventDefault();
-      API.signIn(this.state.password, this.state.email)
-      .then((res) => {
-        console.log(res.data)
-      })
-        console.log("Success!!!") 
+      // event.preventDefault();
+      // API.signIn(this.state.password, this.state.email)
+      // .then((res) => {
+      //   console.log(res.data)
+      // })
+      //   console.log("Success!!!") 
 
         
         
@@ -45,7 +55,7 @@ export class Login extends Component {
            
            <Modal
   actions={[
-    <Button flat modal="close" node="button" waves="green" onClick={(e) => {this.submitLogin(e);}}>Login</Button>,
+    <Button flat modal="close" node="button" waves="green" onClick={() => {this.submitLogin();}}><Link to="./user">Login</Link></Button>,
     <Button flat modal="close" node="button" waves="green" >Close</Button>
     
   ]}
@@ -72,14 +82,10 @@ export class Login extends Component {
 <div className="row">
     <form className="col s12">
       <div className="row">
-        <div className="input-field col s12">
-          <textarea id="textarea1" className="materialize-textarea"></textarea>
-          <label htmlFor="textarea1">Username</label>
-        </div>
-        <div className="input-field col s12">
-          <textarea id="textarea1" className="materialize-textarea"></textarea>
-          <label htmlFor="textarea1">Password</label>
-        </div>
+      <TextInput s={12} label="Email" id="textarea1"  name="email" onChange={(e) => {this.handleInput(e)}}></TextInput>
+        
+        <TextInput s={12} label="Password" id="textarea3"  name="password" type="password" onChange={(e) => {this.handleInput(e)}}></TextInput>
+        
       </div>
     </form>
   </div>
