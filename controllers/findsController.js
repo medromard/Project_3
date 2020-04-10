@@ -19,7 +19,7 @@ module.exports = {
         //filter the pubDate
         p = p.slice(0, 16);
         //filter the title
-        t = t.slice(0, 25) + "..."; 
+        t = t.slice(0, 20) + "..."; 
 
         //parse through image
         let tempImg = "";

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Row, Col, Card, CardTitle, Icon } from 'react-materialize';
+import { Row, Col } from 'react-materialize';
 import Item from '../components/Card';
 import API from '../utils/API';
 
@@ -25,8 +25,11 @@ function ShoeBoard() {
             <Row>
                 {state.array.map(item => (
                     <Col
+                    
+                        key = {item.link} 
+                    
                         s={12}
-                        m={6}>
+                        m={4}>
                          {/* {JSON.stringify(item)} */}
                             <Item 
                                 title={item.title}

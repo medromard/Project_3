@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import { Row, Col, Card, CardTitle, Icon, Button } from "react-materialize";
+import { Col, Card, CardTitle, Icon, Button } from "react-materialize";
 import { Link } from "react-router-dom";
 
 function User() {
-  const [state, setState] = useState({
+  const [Row] = useState({
     array: [0, 1, 0, 1, 0, 1]
   });
   return (
@@ -26,15 +26,16 @@ function User() {
             ]}
             closeIcon={<Icon>close</Icon>}
             header={
-              <CardTitle image="https://materializecss.com/images/sample-1.jpg" />
+              <CardTitle image="https://materializecss.com/images/sample-1.jpg"/>
             }
             horizontal
             revealIcon={<Icon>more_vert</Icon>}
           >
-            <h6 className="mb50"> Welcome User Name</h6>
+            <h6 className="mb15"> Welcome User Name</h6>
 
             <form action="#">
-              <div className="row">
+              <Col s={12} m={8}>
+              <div className="row mb0">
                 <div className="input-field col s12">
                   <i className="material-icons prefix">mode_edit</i>
                   <textarea
@@ -44,37 +45,52 @@ function User() {
                   <label for="icon_prefix2"> About Me</label>
                 </div>
               </div>
+              </Col>
+              <Col s={12} m={4} className="overflow">
               <p>
                 <label className="mr3">
                   <input name="group1" type="radio" checked />
-                  <span className="brand-name mr25 mb25 ">Nike</span>
+                  <span className="brand-name mr25 mb10 ">Nike</span>
                 </label>
 
                 <label>
                   <input name="group1" type="radio" />
-                  <span className="brand-name mr25 mb25">Adidas</span>
+                  <span className="brand-name mr25 mb10">Adidas</span>
                 </label>
                 <label>
                   <input name="group1" type="radio" />
-                  <span className="brand-name mr25 mb25">Converse</span>
+                  <span className="brand-name mr25 mb10">Converse</span>
                 </label>
                 <label>
                   <input name="group1" type="radio" />
-                  <span className="brand-name mr25 mb25">Vans</span>
+                  <span className="brand-name mr25 mb10">Vans</span>
                 </label>
                 <label>
                   <input name="group1" type="radio" />
-                  <span className="brand-name mr25 mb25">Asics</span>
+                  <span className="brand-name mr25 mb10">Asics</span>
                 </label>
                 <label>
                   <input name="group1" type="radio" />
-                  <span className="brand-name mr25 mb25">New Balance</span>
+                  <span className="brand-name mr25 mb10">New Balance</span>
                 </label>
                 <label>
                   <input name="group1" type="radio" />
-                  <span className="brand-name mr25 mb25">Rebook</span>
+                  <span className="brand-name mr25 mb10">Reebok</span>
+                </label>
+                <label>
+                  <input name="group1" type="radio" />
+                  <span className="brand-name mr25 mb10">Puma</span>
+                </label>
+                <label>
+                  <input name="group1" type="radio" />
+                  <span className="brand-name mr25 mb10">Fila</span>
+                </label>
+                <label>
+                  <input name="group1" type="radio" />
+                  <span className="brand-name mr25 mb10">LeBron</span>
                 </label>
               </p>
+              </Col>
             </form>
           </Card>
         </Col>

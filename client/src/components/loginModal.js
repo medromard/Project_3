@@ -1,6 +1,7 @@
-import React, { Component } from 'react';
+import React, { Component, useState } from 'react';
 import { Modal, Button} from 'react-materialize';
 import { Link } from "react-router-dom";
+import API from '../utils/API';
 
 
 export class Login extends Component {
@@ -8,12 +9,34 @@ export class Login extends Component {
         const M = window.M;
         document.addEventListener('DOMContentLoaded', function() {
             var elems = document.querySelectorAll('.modal');
-            var instances = M.Modal.init(elems, {});
+            // var instances = M.Modal.init(elems, {});
           });
     }
-    submitLogin(){
+    submitLogin(event){
+      event.preventDefault();
+      API.signIn(this.state.password, this.state.email)
+      .then((res) => {
+        console.log(res.data)
+      })
         console.log("Success!!!") 
+
         
+        
+    }
+
+    handleInput (event) {
+      console.log(event)
+      event.preventDefault();
+      const key = event.target.name;
+      
+      const value = event.target.value;
+      console.log(value);
+      this.state[key]=value;
+      console.log(this.state)
+      //this.setState( (state, event) => ({[event.target.name]: event.target.value }))
+      // this.setState(  {email: event.target.value })
+      // console.log(this.state + event.target.name + event.target.value)
+     
     }
 
     render() {
@@ -22,7 +45,7 @@ export class Login extends Component {
            
            <Modal
   actions={[
-    <Button flat modal="close" node="button" waves="green" onClick={() => {this.submitLogin();}}><Link to = "/user">Login</Link></Button>,
+    <Button flat modal="close" node="button" waves="green" onClick={(e) => {this.submitLogin(e);}}>Login</Button>,
     <Button flat modal="close" node="button" waves="green" >Close</Button>
     
   ]}
@@ -51,11 +74,11 @@ export class Login extends Component {
       <div className="row">
         <div className="input-field col s12">
           <textarea id="textarea1" className="materialize-textarea"></textarea>
-          <label for="textarea1">Username</label>
+          <label htmlFor="textarea1">Username</label>
         </div>
         <div className="input-field col s12">
           <textarea id="textarea1" className="materialize-textarea"></textarea>
-          <label for="textarea1">Password</label>
+          <label htmlFor="textarea1">Password</label>
         </div>
       </div>
     </form>

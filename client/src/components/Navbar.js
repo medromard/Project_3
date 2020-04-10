@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import login, { Login } from './loginModal'
-import register, { Register } from './registerModal'
+import { Login } from './loginModal'
+import { Register } from './registerModal'
 import { Link } from "react-router-dom";
 
 export class Navbar extends Component {
